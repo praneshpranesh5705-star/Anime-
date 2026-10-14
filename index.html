@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="theme-color" content="#080914"><meta name="description" content="Anime PowerVerse — discover characters, powers, transformations and compare fighters.">
-<title>Anime PowerVerse</title><link rel="stylesheet" href="style.css">
+<meta name="theme-color" content="#070812"><meta name="description" content="Anime PowerVerse — explore characters, signature powers, transformations and VS battles.">
+<title>Anime PowerVerse — Characters & Powers</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header><a class="logo" href="#top">⚡ ANIME <span>POWERVERSE</span></a><nav><a href="#characters">Characters</a><a href="#favorites">Favorites</a><a href="#battle">VS Battle</a></nav></header>
 <main id="top">
-<section class="hero"><div><p class="eyebrow">THE ULTIMATE CHARACTER POWER ENCYCLOPEDIA</p><h1>Discover <span>Every Power.</span></h1><p>Explore anime, animation and legendary fictional characters. Tap a character to reveal abilities, transformations, weapons and power stats.</p><div class="search"><input id="search" autocomplete="off" placeholder="Search Gojo, Naruto, Sung Jin-Woo..."/><button id="searchBtn" aria-label="Search">⌕</button></div><div class="hero-actions"><button id="randomBtn" class="primary">🎲 Random Character</button><button id="topBtn" class="secondary">🔥 Top Characters</button></div><p id="apiStatus" class="api-status">Live character search ready</p></div></section>
+<section class="hero"><div><p class="eyebrow">THE ULTIMATE CHARACTER POWER ENCYCLOPEDIA</p><h1>Discover <span>Every Power.</span></h1><p>Explore anime, animation and legendary fictional characters. Tap a character to reveal signature abilities, transformations, weapons, limits and power stats.</p><div class="search"><input id="search" autocomplete="off" placeholder="Search Gojo, Naruto, Sung Jin-Woo..."/><button id="searchBtn" aria-label="Search">⌕</button></div><div class="hero-actions"><button id="randomBtn" class="primary">🎲 Random Character</button><button id="topBtn" class="secondary">🔥 Top Characters</button></div><p id="apiStatus" class="api-status">Live character search ready</p></div></section>
 <section id="characters" class="section"><div class="section-title"><div><p class="eyebrow">CHARACTER DATABASE</p><h2 id="resultsTitle">Featured Characters</h2></div><div id="filters" class="filters"></div></div><div id="grid" class="grid"></div><div id="loadMore" class="load-more"></div></section>
 <section id="favorites" class="section favorites-section"><div class="section-title"><div><p class="eyebrow">YOUR COLLECTION</p><h2>❤️ Favorites</h2></div></div><div id="favoritesGrid" class="grid"></div></section>
-<section id="battle" class="battle"><p class="eyebrow">POWER ARENA</p><h2>⚔️ Choose your fighters</h2><p class="muted">Compare the displayed stats and see who wins.</p><div class="battle-grid"><select id="fighterA"></select><b>VS</b><select id="fighterB"></select><button id="battleBtn">COMPARE POWERS</button></div><div id="battleResult"></div></section>
+<section id="battle" class="battle"><p class="eyebrow">POWER ARENA</p><h2>⚔️ Choose your fighters</h2><p class="muted">Compare the displayed stats and see who wins.</p><div class="battle-grid"><select id="fighterA" aria-label="First fighter"></select><b>VS</b><select id="fighterB" aria-label="Second fighter"></select><button id="battleBtn">COMPARE POWERS</button></div><div id="battleResult"></div></section>
 </main>
-<div id="modal" class="modal" role="dialog" aria-modal="true"><div class="modal-card"><button class="close" id="closeBtn" aria-label="Close">×</button><div id="details"></div></div></div>
-<footer>Anime PowerVerse • Data powered by public anime data services • Built for fans</footer>
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Character details"><div class="modal-card"><button class="close" id="closeBtn" aria-label="Close">×</button><div id="details"></div></div></div>
+<footer>Anime PowerVerse • Public anime data + curated fan power guide • Built for fans</footer>
 <script src="app.js"></script>
 </body></html>
